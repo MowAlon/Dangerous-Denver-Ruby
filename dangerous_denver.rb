@@ -3,10 +3,10 @@ require './tabulator'
 require 'benchmark'
 
 tabulation_time = Benchmark.realtime do
-  traffic_data = DataParser.converted_data('./data/traffic-accidents.csv')
+  traffic_data = DataParser.converted_data('./data/traffic-accidents.csv', :incident_address, :neighborhood_id)
   @traffic_addresses = Tabulator.tabulate(traffic_data, :incident_address)
   @traffic_neighborhoods = Tabulator.tabulate(traffic_data, :neighborhood_id)
-  crime_data = DataParser.converted_data('./data/crime.csv')
+  crime_data = DataParser.converted_data('./data/crime.csv', :neighborhood_id)
   @crime = Tabulator.tabulate(crime_data, :neighborhood_id)
 end
 

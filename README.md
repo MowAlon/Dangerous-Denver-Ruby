@@ -1,4 +1,4 @@
-# WARNING: The dataset in this repo is kinda big and represents some data from Denver at a specific time. The original tutorial instructions are below and were intended for a JavaScript implementation. This version was done in Ruby as an exercise to demonstrate the different between the two.
+# WARNING: The dataset in this repo is kinda big and represents some data from Denver at a specific time. The original tutorial instructions are below and were intended for a JavaScript implementation that includes pulling down current data. This version was done in Ruby as an exercise to demonstrate the different between the two.
 
 # The Most Dangerous Corners in Denver
 
